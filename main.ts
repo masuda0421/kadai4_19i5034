@@ -20,7 +20,6 @@ function start () {
     basic.clearScreen()
     me = game.createSprite(2, 4)
     count = 0
-    _null = 1
 }
 let kabe4: game.LedSprite = null
 let kabe3: game.LedSprite = null
@@ -35,6 +34,7 @@ let me: game.LedSprite = null
 start()
 // 壁が迫ってくる
 basic.forever(function () {
+    _null = 1
     if (_null == 1) {
         ana = randint(0, 4)
         配列 = kabes.removeAt(ana)
